@@ -28,7 +28,7 @@ function startIntroTyping() {
   })
     .type('welcome.', { delay: 1200 })
     .delete(null, { delay: 1000 })
-    .type(`${mobile ? 'tap' : 'aperte qualquer tecla'} para entrar.`)
+    .type(`${mobile ? 'tap' : 'press any key'} to enter.`)
     .go();
 
   setTimeout(function () {
@@ -39,7 +39,7 @@ function startIntroTyping() {
 function typerStartTyping(typer) {
   typer.reset();
 
-  let text = ['s/o', 'haxuu', 'cinnox', 'speqq'];
+  let text = ['javascript', 'golang', 'java', 'c#', 'c++'];
 
   text.forEach(function (language, index) {
     typer.move(null);
@@ -64,7 +64,7 @@ function startMainTyping() {
 }
 
 function switchScreen() {
-  document.title = 'triz.xyz | home';
+  document.title = 'trizera.club | home';
 
   $('.intro').fadeOut(1000, function () {
     $('.bg-image').fadeIn(1000);
